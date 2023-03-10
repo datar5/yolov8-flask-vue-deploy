@@ -54,6 +54,10 @@ Windows 11以上操作系统；
 
 软件： Anaconda22.9.0 + python3.9.13 + Pytorch1.13.1+cu117 + Pycharm(或者是DataSpell) + WebStorm + Node.js 18.14.1 (x64)
 
+### 后续说明
+
+后面会对这个项目细节相关进行说明
+
 
 ### 感谢 & 技术提供
 
@@ -63,7 +67,7 @@ ultralytics官网: https://github.com/ultralytics/ultralytics
 
 ![img.png](img/img2.png)
 
-实验数据记录:https://www.comet.com/site/lp/yolov5-with-comet/?utm_source=yolov5&utm_medium=partner&utm_campaign=partner_yolov5_2022&utm_content=github
+实验数据记录: https://www.comet.com/site/lp/yolov5-with-comet/?utm_source=yolov5&utm_medium=partner&utm_campaign=partner_yolov5_2022&utm_content=github
 
 ![img.png](img/img6.png)
 
