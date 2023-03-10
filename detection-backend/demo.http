@@ -1,0 +1,354 @@
+###
+GET http://127.0.0.1:5000/files/2
+
+###
+GET http://127.0.0.1:5000/wmodel
+
+### 下面是从切换模型，检测开始记录数据，查询数据，删除数据的步骤
+###
+###
+PUT http://127.0.0.1:5000/switch
+Content-Type: application/json
+
+    {
+      "model_dataset": "bdd",
+      "model_name": "yolov8l_bdd",
+      "model_type": "yolov8",
+      "wid": 1
+    }
+
+###
+GET http://127.0.0.1:5000/files/113
+
+###
+POST http://127.0.0.1:5000/detect
+Content-Type: application/json
+
+{
+    "fid": 113,
+    "height": 720,
+    "name": "b7bcc17a-72df68f9",
+    "origin": "localhost://b7bcc17a-72df68f9.jpg",
+    "timestamp": "Tue, 28 Feb 2023 09:32:58 GMT",
+    "type": "jpg",
+    "width": 1280
+}
+
+###
+POST http://127.0.0.1:5000/result
+Content-Type: application/json
+
+{
+      "addition": "单独的检测任务",
+      "filename": "b7bcc17a-72df68f9",
+      "mission_type": "detection",
+      "num": 26,
+      "timestamp": 1677658144,
+      "type": "jpg",
+      "wid": 1
+    }
+
+
+
+###
+POST http://127.0.0.1:5000/obj
+Content-Type: application/json
+
+{
+  "message": "检测成功",
+  "results": {
+    "log": {
+      "addition": "单独的检测任务",
+      "filename": "b7bcc17a-72df68f9",
+      "mission_type": "detection",
+      "num": 26,
+      "timestamp": 1677658144,
+      "type": "jpg",
+      "wid": 1
+    },
+    "objects": [
+      {
+        "cls": "car",
+        "conf": 0.9426229596138,
+        "x1": 21.0,
+        "x2": 335.0,
+        "y1": 502.0,
+        "y2": 651.0
+      },
+      {
+        "cls": "bus",
+        "conf": 0.9366695284843445,
+        "x1": 819.0,
+        "x2": 1019.0,
+        "y1": 451.0,
+        "y2": 611.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.9037463665008545,
+        "x1": 588.0,
+        "x2": 695.0,
+        "y1": 518.0,
+        "y2": 608.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.8302534222602844,
+        "x1": 757.0,
+        "x2": 812.0,
+        "y1": 527.0,
+        "y2": 567.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.8223326802253723,
+        "x1": 363.0,
+        "x2": 419.0,
+        "y1": 518.0,
+        "y2": 555.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.7934474945068359,
+        "x1": 414.0,
+        "x2": 448.0,
+        "y1": 521.0,
+        "y2": 550.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.7931928038597107,
+        "x1": 690.0,
+        "x2": 723.0,
+        "y1": 531.0,
+        "y2": 560.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.7816309332847595,
+        "x1": 445.0,
+        "x2": 468.0,
+        "y1": 526.0,
+        "y2": 548.0
+      },
+      {
+        "cls": "traffic light",
+        "conf": 0.7765074372291565,
+        "x1": 548.0,
+        "x2": 564.0,
+        "y1": 409.0,
+        "y2": 452.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.7473191618919373,
+        "x1": 545.0,
+        "x2": 577.0,
+        "y1": 527.0,
+        "y2": 552.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.7085943818092346,
+        "x1": 18.0,
+        "x2": 102.0,
+        "y1": 496.0,
+        "y2": 548.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.7016028761863708,
+        "x1": 723.0,
+        "x2": 748.0,
+        "y1": 531.0,
+        "y2": 553.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.64445960521698,
+        "x1": 744.0,
+        "x2": 765.0,
+        "y1": 532.0,
+        "y2": 557.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.6331145763397217,
+        "x1": 70.0,
+        "x2": 132.0,
+        "y1": 507.0,
+        "y2": 536.0
+      },
+      {
+        "cls": "traffic light",
+        "conf": 0.6008689999580383,
+        "x1": 1094.0,
+        "x2": 1119.0,
+        "y1": 489.0,
+        "y2": 509.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.5753867030143738,
+        "x1": 523.0,
+        "x2": 539.0,
+        "y1": 528.0,
+        "y2": 543.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.5730618238449097,
+        "x1": 2.0,
+        "x2": 75.0,
+        "y1": 499.0,
+        "y2": 555.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.5328835248947144,
+        "x1": 587.0,
+        "x2": 604.0,
+        "y1": 526.0,
+        "y2": 543.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.5161319971084595,
+        "x1": 462.0,
+        "x2": 494.0,
+        "y1": 524.0,
+        "y2": 547.0
+      },
+      {
+        "cls": "traffic light",
+        "conf": 0.5084584951400757,
+        "x1": 1078.0,
+        "x2": 1095.0,
+        "y1": 431.0,
+        "y2": 471.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.5038861632347107,
+        "x1": 302.0,
+        "x2": 337.0,
+        "y1": 521.0,
+        "y2": 564.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.41518062353134155,
+        "x1": 682.0,
+        "x2": 699.0,
+        "y1": 528.0,
+        "y2": 547.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.36542969942092896,
+        "x1": 573.0,
+        "x2": 589.0,
+        "y1": 525.0,
+        "y2": 539.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.35099053382873535,
+        "x1": 307.0,
+        "x2": 361.0,
+        "y1": 512.0,
+        "y2": 543.0
+      },
+      {
+        "cls": "car",
+        "conf": 0.31251752376556396,
+        "x1": 504.0,
+        "x2": 527.0,
+        "y1": 528.0,
+        "y2": 545.0
+      },
+      {
+        "cls": "traffic sign",
+        "conf": 0.2699459195137024,
+        "x1": 613.0,
+        "x2": 634.0,
+        "y1": 473.0,
+        "y2": 492.0
+      }
+    ]
+  },
+  "status": "success"
+}
+
+
+###
+GET  http://127.0.0.1:5000/obj/1
+
+###
+DELETE http://127.0.0.1:5000/obj/1
+
+###
+GET http://127.0.0.1:5000/result/
+
+###
+GET http://127.0.0.1:5000/result/1
+
+###
+DELETE http://127.0.0.1:5000/delete/result
+Content-Type: application/json
+
+ {
+      "addition": "单独的检测任务",
+      "filename": "b7a8e795-ff80fddf",
+      "mission_type": "detection",
+      "num": 23,
+      "rid": 1,
+      "timestamp": 1677258002,
+      "type": "jpg",
+      "wid": 1
+    }
+
+###
+DELETE http://127.0.0.1:5000/result/1
+
+####分页函数测试
+GET http://127.0.0.1:5000/page/
+Content-Type: application/json
+
+{
+  "curPage": 1,
+  "pageSize": 2,
+  "tableName": "file"
+}
+
+###
+GET http://127.0.0.1:5000/objectPage/1
+Content-Type: application/json
+
+{
+    "curPage": 3,
+    "pageSize": 5
+}
+
+###
+GET http://127.0.0.1:5000/num/
+Content-Type: application/json
+
+{
+  "rid": 1,
+  "tableName": "model"
+}
+
+####模糊查找测试
+
+GET http://127.0.0.1:5000/deblurS/
+Content-Type: application/json
+
+{
+    "keyword": "b",
+  "tableName": "result"
+}
+
+
+###查看当前模型参数测试
+GET http://127.0.0.1:5000/current
