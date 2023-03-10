@@ -34,6 +34,26 @@
 ![img.png](img/show2.png)
 ![img.png](img/show4.png)
 
+### 个人环境
+
+#### 开发技术及工具的选择：
+
+Windows 11
+
+Python 3.9.13
+
+Pytorch 1.13.1+cu117
+
+Jetbrains-IDEA系列2022
+
+#### 开发环境：
+
+硬件：电脑内存32G左右，GPU RTX A5000
+
+Windows 11以上操作系统；
+
+软件： Anaconda22.9.0 + python3.9.13 + Pytorch1.13.1+cu117 + Pycharm(或者是DataSpell) + WebStorm + Node.js 18.14.1 (x64)
+
 
 ### 感谢 & 技术提供
 
