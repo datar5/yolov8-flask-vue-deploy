@@ -1,6 +1,8 @@
 # Yolov8-flask-vue（本科毕设）
 
-这是一个基于ultralytics的一个部署到flask后端，然后vue作为前端所展示的一个通用的Yolo目标检测的展示页面
+这是一个基于ultralytics的一个部署到flask后端，然后vue作为前端所展示的一个通用的Yolo目标检测的展示页面，其实本质上类似于有着web页面外观的本地exe项目（因为数据库是个本地文件，放在sqlite上）
+
+需要在pycharm等IDE安装好sqlite相关连接
 
 基本上只要是ultralytics训练好的模型都可以运行，也就是说官方提供的COCO训练好的模型都可以在这个Yolo通用前端平台上使用
 
@@ -20,6 +22,8 @@
 ![img.png](img/mAP50.png)
 
 个人毕设训练这些模型不方便公开，这里只是提供了一个通用的YOLO实现平台，可以将自己训练好的模型放入到上面去来实现目标检测展示功能
+
+在这个毕设里面一共是200多张图片，6个yolo模型，拉下来需要一定时间
 
 图片上传来自于本地或者是url地址，但url地址有着严格要求
 
@@ -48,13 +52,25 @@ Jetbrains-IDEA系列2022
 
 #### 开发环境：
 
+数据库：使用的是sqlite本地的
+
 硬件：电脑内存32G左右，GPU RTX A5000
 
 Windows 11以上操作系统；
 
 软件： Anaconda22.9.0 + python3.9.13 + Pytorch1.13.1+cu117 + Pycharm(或者是DataSpell) + WebStorm + Node.js 18.14.1 (x64)
 
+### 低配部署环境：
+
+硬件：电脑内存16G左右，GPU RTX 1050Ti
+
+Windows 10以上操作系统；
+
+软件： Pycharm(或者是DataSpell) + WebStorm + Node.js 18.14.1 (x64) + flask版本2.2左右
+
 ### 后续说明
+
+本人现在忙着准备深大的研究生复试，写毕业论文
 
 后面会对这个项目细节相关进行说明
 
